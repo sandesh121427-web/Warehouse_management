@@ -19,7 +19,6 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
-
       - name: Run tests and package
         working-directory: java-assignment
-        run: ./mvnw --batch-mode --no-transfer-progress verify
+        run: chmod +x mvnw && ./mvnw --batch-mode --no-transfer-progress verify
